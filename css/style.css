@@ -1,7 +1,7 @@
 body {
     background: #efefef url(../img/ticks.png) repeat 0 0;
     color: #000;
-    font-family: Helvetica, Arial, Verdana;
+    font-family: Ubuntu,Helvetica,Arial,Verdana;
     font-size: 12px;
     line-height: 1.4;
     margin: 0;
@@ -11,17 +11,21 @@ body {
 footer {
     border-top: 1px solid #e5e5e5;
     color: #777;
-    padding-top: 19px;
+    margin-top: 2em;
+    padding-top: 2em;
+}
+
+footer p {
+    text-align: center;
+}
+
+h1,h2,h3,header,.label-text {
+    font-family: montserrat;
 }
 
 h1 {
     margin: 0;
 }
-
-    h1 a {
-        color: #fff;
-        text-decoration: none;
-    }
 
 header {
     background-image: url(../img/Wax_Skull_web.jpg);
@@ -29,22 +33,22 @@ header {
     background-size: cover;
     color: inherit;
     height: 15em;
-    margin-top: 0;
     margin-bottom: 30px;
+    margin-top: 0;
+    overflow: hidden;
     padding-bottom: 30px;
     padding-top: 1em;
     text-align: center;
-    overflow: hidden;
 }
 
-    header h1 {
-        color: #fff;
-        float: left;
-        font-size: 12em;
-        margin-top: 73px;
-        letter-spacing: -.08em;
-        display: inline-block;
-    }
+header h1 {
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-size: 12em;
+    letter-spacing: -.08em;
+    margin-top: 73px;
+}
 
 nav li {
     color: #fff;
@@ -55,30 +59,27 @@ nav li {
     text-decoration: none;
 }
 
-    nav li a {
-      color: #fff;
-      text-decoration: none;
-    }
+nav ul {
+    background: rgba(20,20,20,.8));
+}
 
-    nav ul {
-      background: rgba(20,20,20,.8));
-    }
+nav .line {
+    background: #fff;
+    border-radius: 1em;
+    height: .2em;
+    margin-top: .25em;
+    width: 2em;
+}
 
-    nav .line{
-      width: 2em;
-      height: .2em;
-      background: #fff;
-      border-radius: 1em;
-      margin-top: .25em;
-    }
-    nav .line:first-of-type{
-      margin-top:.7em;
-    }
-    nav li:first-child{
-      float:right;
-      display: none;
-      cursor: pointer;
-    }
+nav .line:first-of-type {
+    margin-top: .7em;
+}
+
+nav li:first-child {
+    cursor: pointer;
+    display: none;
+    float: right;
+}
 
 #container {
     margin: auto;
@@ -86,88 +87,76 @@ nav li {
 }
 
 .container {
-    position: relative; 
-    width: 100%; 
-    margin: 0 auto; 
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;    
+    margin: 0 auto;
+    moz-transition: all 1s ease;
+    o-transition: all 1s ease;
+    position: relative;
+    transition: all 1s ease;
+    webkit-transition: all 1s ease;
+    width: 100%;
 }
 
-/*    #container header {
-        height: 4vw;
-        background: #ddd;
-    }
-
-    #container header h1 {
-        margin-top: -2.19vw;
-        padding: 0;
-        font-size: 9vw;
-    }
-
-    #container header h1 a {
-        margin: 0;
-    }
-*/
 #filters {
     display: table;
     list-style: none;
     margin: auto;
-    padding: 0;
+    padding: 0 0 2em;
 }
 
-    #filters div {
-        color: #666;
-        float: left;
-        font-size: 2em;
-        margin: 0 .3em;
-        padding: .3em .5em;
-    }
+#filters div {
+    color: #666;
+    float: left;
+    font-size: 2em;
+    margin: 0 .3em;
+    padding: .3em .5em;
+}
 
-    #filters li span {
-        color: #666;
-        cursor: pointer;
-        display: block;
-        padding: 5px 20px;
-        text-decoration: none;
-    }
+#filters li {
+    float: left;
+}
 
-    #filters li span.active {
-        background: #666;
-        color: #fff;
-    }
+#filters li span {
+    color: #666;
+    cursor: pointer;
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+#filters li span.active {
+    background: #666;
+    color: #fff;
+}
 
 #portfolio {
-    padding-bottom: 2em;
     display: inline-block;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;  
-
+    moz-transition: all 1s ease;
+    o-transition: all 1s ease;
+    padding-bottom: 2em;
+    transition: all 1s ease;
+    webkit-transition: all 1s ease;
 }
 
 #portfoliolist {
-    position: relative; 
-    width: 91.8%; 
-    margin: 0 auto; 
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;    
+    margin: 0 auto;
+    moz-transition: all 1s ease;
+    o-transition: all 1s ease;
+    position: relative;
+    transition: all 1s ease;
+    webkit-transition: all 1s ease;
+    width: 91.8%;
 }
 
-    #portfoliolist .portfolio {
-        -moz-box-sizing: border-box;
-        -o-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        float: left;
-        margin: 1%;
-        overflow: hidden;
-        display:none;
-        width: 23%;
-    }
+#portfoliolist .portfolio {
+    display: none;
+    float: left;
+    margin: 1%;
+    moz-box-sizing: border-box;
+    o-box-sizing: border-box;
+    overflow: hidden;
+    webkit-box-sizing: border-box;
+    width: 23%;
+}
 
 #project-list {
     margin: auto;
@@ -175,51 +164,51 @@ nav li {
 }
 
 #contact {
-    height: 300px;
-    display: block;
     clear: both;
-    width: 90%;
+    display: block;
+    height: 300px;
     margin: auto;
+    width: 90%;
 }
 
 #contact form {
-  width: 94%;
-  margin: auto;
+    margin: auto;
+    width: 94%;
 }
 
 #contact input {
-  width: 48%;
-  height: 3em;
+    height: 3em;
+    width: 48%;
 }
 
 #contact input:first-child {
-  margin-right: 2%;
+    margin-right: 2%;
 }
 
 #contact textarea {
-  width: 99%;
-  height: 10em;
-  margin-top: 2%;
+    height: 10em;
+    margin-top: 2%;
+    width: 99%;
 }
 
 #contact button {
-  background:  rgb(30,139,190);
-  border-radius: .5em;
-  padding: .5em;
-  border: 2px solid #fff;
-  color: #fff;
-  font-size: 2em;
-  font-style: uppercase;
-  margin-top: 2%;
+    background: #1e8bbe;
+    border: 2px solid #fff;
+    border-radius: .5em;
+    color: #fff;
+    font-size: 2em;
+    font-style: uppercase;
+    margin-top: 2%;
+    padding: .5em;
 }
 
 .filter {
-    font-size: 2em
+    font-size: 2em;
 }
 
 .full-width {
-    width: 100;
     background: #fff;
+    width: 100px;
 }
 
 .alignleft {
@@ -233,27 +222,15 @@ nav li {
 }
 
 .carousel {
-    background-image: url(../img/test-headshot-crop.jpg);
-    background-position: 100% 50%;
-    background-size: cover;
     height: 30em;
-    margin: auto auto 3em;
-    max-width: 960px;
+    margin: auto auto 6em;
     text-align: center;
-    width: 98%;
 }
 
-    .carousel img {
-        float: right;
-        margin: 12em 2em 2em;
-        opacity: 0.4;
-        width: 3em;
-    }
-
-    .carousel img:first-child,
-    #filters li {
-        float: left
-    }
+.carousel input {
+    height: 33.5em;
+    margin-top: 28em;
+}
 
 .clear {
     clear: both;
@@ -273,10 +250,7 @@ nav li {
     visibility: hidden;
 }
 
-.clearfix:before,
-.clearfix:after,
-.row:before,
-.row:after {
+.clearfix:before,.clearfix:after,.row:before,.row:after {
     content: '\0020';
     display: block;
     height: 0;
@@ -284,14 +258,6 @@ nav li {
     visibility: hidden;
     width: 0;
 }
-
-/*#container:after {
-    clear: both;
-    content: "\0020";
-    display: block;
-    height: 0;
-    visibility: hidden;
-}*/
 
 .portfolio .label {
     bottom: -40px;
@@ -330,7 +296,7 @@ nav li {
     background: #666;
     cursor: pointer;
     overflow: hidden;
-    position: relative !important;
+    position: relative!important;
 }
 
 .project {
@@ -344,11 +310,11 @@ nav li {
     width: 31%;
 }
 
-    .project a {
-        display: inline-block;
-        float: right;
-        vertical-align: bottom;
-    }
+.project a {
+    display: inline-block;
+    float: right;
+    vertical-align: bottom;
+}
 
 .projectPage {
     margin: auto;
@@ -356,10 +322,13 @@ nav li {
     width: 98%;
 }
 
-    .projectPage h1 {
-        font-size: 5em;
-        margin: auto;
-    }
+.projectPage h1 {
+    font-size: 5em;
+    letter-spacing: -.05em;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 .projectPage>img {
     float: right;
@@ -380,365 +349,303 @@ nav li {
     width: 98%;
 }
 
-    .relatedProjects div {
-        background: #eee;
-        float: left;
-        margin: 1%;
-        width: 23%;
-    }
-
-    .relatedProjects h2 {
-        border-bottom: 1px solid #e5e5e5
-    }
-
-.row,
-.clearfix {
-    zoom: 1
+.relatedProjects > div {
+    float: left;
+    margin: 1%;
 }
 
-.row:after,
-.clearfix:after {
-    clear: both
+.relatedProjects h2 {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.relatedProjects .portfolio-wrapper {
+    float: left;
+    margin: 1%;
+    width: 23%;
+}
+
+.relatedProjects .portfolio .label {
+    bottom: 0;
+    opacity: 0;
+}
+
+.relatedProjects a:hover .portfolio .label {
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+
+.row,.clearfix {
+    zoom: 1;
+}
+
+.row:after,.clearfix:after {
+    clear: both;
 }
 
 .row {
-  float: left;
-  width: 30%;
-  margin: 1%;
+    float: left;
+    margin: 1%;
+    width: 30%;
 }
 
 #resume {
     background: #fff;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    overflow: hidden;
-    display: block;
     clear: both;
-    width: 90%;
+    display: block;
     margin: auto;
+    overflow: hidden;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    width: 90%;
 }
 
-    #resume a,
-    #resume a:visited {
-        color: #11ABB0
-    }
+#resume a,#resume a:visited {
+    color: #11ABB0;
+}
 
-    #resume a:hover,
-    #resume a:focus {
-        color: #313131
-    }
+#resume a:hover,#resume a:focus {
+    color: #313131;
+}
 
-    #resume h1 {
-        font: 18px/24px 'opensans-bold', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
+#resume h1 {
+    font: 18px/24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
-        #resume h1 span {
-            border-bottom: 3px solid #11ABB0;
-            padding-bottom: 6px;
-        }
+#resume h1 span {
+    border-bottom: 3px solid #11ABB0;
+    padding-bottom: 6px;
+}
 
-    #resume h3 {
-        font: 25px/30px 'opensans-bold', sans-serif
-    }
+#resume h3 {
+    font: 25px/30px;
+}
 
-    #resume .header-col {
-        padding-top: 9px
-    }
+#resume .header-col {
+    padding-top: 9px;
+}
 
-    #resume .main-col {
-        padding-right: 10%
-    }
+#resume .main-col {
+    padding-right: 10%;
+}
 
-.education,
-.work {
+.education,.work {
+    border-bottom: 1px solid #E8E8E8;
     margin-bottom: 48px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #E8E8E8;
 }
 
 #resume .info {
-    font: 16px/24px 'librebaskerville-italic', serif;
     color: #6E7881;
+    font: 16px/24px;
     margin-bottom: 18px;
     margin-top: 9px;
 }
 
-    #resume .info span {
-        margin-right: 5px;
-        margin-left: 5px;
-    }
+#resume .info span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 #resume .date {
-    font: 15px/24px 'opensans-regular', sans-serif;
+    font: 15px/24px;
     margin-top: 6px;
 }
 
-.education,
-.work,
-.skill {
+.education,.work,.skill {
     float: left;
     margin: 2em;
     width: 100%;
 }
 
 .bars > ul {
-    -webkit-padding-start: 0;
     padding-start: 0;
+    webkit-padding-start: 0;
 }
 
 .bars {
-    width: 48%;
     float: left;
+    margin: auto;
     padding: 0;
     text-align: left;
-    margin: auto;
+    width: 48%;
 }
 
-    .bars .skills {
-        margin-top: 36px;
-        list-style: none;
-    }
+.bars .skills {
+    list-style: none;
+    margin-top: 36px;
+}
 
-    .bars li {
-        position: relative;
-        margin-bottom: 1.8em;
-        background: #ccc;
-        height: 3em;
-        border-radius: .2em;
-    }
+.bars li {
+    background: #ccc;
+    border-radius: .2em;
+    height: 3em;
+    margin-bottom: 1.8em;
+    position: relative;
+}
 
-        .bars li em {
-            font: 15px 'opensans-bold', sans-serif;
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: normal;
-            position: relative;
-            top: .5em;
-            margin-left: 1em;
-        }
+.bars li em {
+    color: #fff;
+    font: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-left: 1em;
+    position: relative;
+    text-transform: uppercase;
+    top: .5em;
+}
 
 .bar-expand {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0;
-    padding-right: 24px;
     background: #313131;
+    border-radius: .2em 0 0 .2em;
     display: inline-block;
     height: 3em;
+    left: 0;
     line-height: 3em;
-    border-radius: .2em 0 0 .2em;
+    margin: 0;
+    padding-right: 24px;
+    position: absolute;
+    top: 0;
 }
 
 .indesign {
+    background: #d03081;
+    moz-animation: indesign 2s ease;
+    webkit-animation: indesign 2s ease;
     width: 90%;
-    -moz-animation: indesign 2s ease;
-    -webkit-animation: indesign 2s ease;
-    background: rgb(208,48,129)
 }
 
 .photoshop {
+    background: #2fc9f9;
+    moz-animation: photoshop 2s ease;
+    webkit-animation: photoshop 2s ease;
     width: 70%;
-    -moz-animation: photoshop 2s ease;
-    -webkit-animation: photoshop 2s ease;
-    background: rgb(47,201,249);
 }
 
 .illustrator {
+    background: #fa791b;
+    moz-animation: illustrator 2s ease;
+    webkit-animation: illustrator 2s ease;
     width: 85%;
-    -moz-animation: illustrator 2s ease;
-    -webkit-animation: illustrator 2s ease;
-    background: rgb(250,121,27);
 }
 
 .wordpress {
+    background: #1e8bbe;
+    moz-animation: wordpress 2s ease;
+    webkit-animation: wordpress 2s ease;
     width: 55%;
-    -moz-animation: wordpress 2s ease;
-    -webkit-animation: wordpress 2s ease;
-    background: rgb(30,139,190);
 }
 
 .css {
+    background: #0f6fc1;
+    moz-animation: css 2s ease;
+    webkit-animation: css 2s ease;
     width: 65%;
-    -moz-animation: css 2s ease;
-    -webkit-animation: css 2s ease;
-    background: rgb(15,111,193);
 }
 
 .html5 {
+    background: #e04f15;
+    moz-animation: html5 2s ease;
+    webkit-animation: html5 2s ease;
     width: 55%;
-    -moz-animation: html5 2s ease;
-    -webkit-animation: html5 2s ease;
-    background: rgb(224,79,21);
 }
 
 .jquery {
+    background: #1267b0;
+    moz-animation: jquery 2s ease;
+    webkit-animation: jquery 2s ease;
     width: 20%;
-    -moz-animation: jquery 2s ease;
-    -webkit-animation: jquery 2s ease;
-    background: rgb(18,103,176);
 }
 
-@-moz-keyframes "indesign" { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 90%
-    }
+100% {
+    width: 20%;
 }
 
-@-moz-keyframes photoshop { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 70%
-    }
+.slideDown {
+    background: rgba(20,20,20,.8);
+    height: 8em;
+    margin-top: 0;
+    padding: 2em;
+    width: 100%;
 }
 
-@-moz-keyframes "illustrator" { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 85%
-    }
+.carousel:hover {
+    opacity: .7;
 }
 
-@-moz-keyframes "wordpress" { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 55%
-    }
+.slide {
+    float: right;
+    left: 0;
+    margin: auto;
+    opacity: 1;
+    position: absolute;
+    transition: opacity .4s;
+    width: 100%;
+    z-index: 1;
 }
 
-@-moz-keyframes "css" { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 65%
-    }
+.faux-ui-facia {
+    cursor: pointer;
+    float: right;
+    height: 100%;
+    margin-top: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
 }
 
-@-moz-keyframes "html5" { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 55%
-    }
+.faux-ui-facia:checked {
+    z-index: 8;
 }
 
-@-moz-keyframes "jquery" { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 20%
-    }
+.faux-ui-facia:nth-child(1):checked {
+    float: left;
+    z-index: 9;
 }
 
-@-webkit-keyframes "indesign" { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 90%
-    }
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia {
+    float: left;
+    z-index: 8;
 }
 
-@-webkit-keyframes "photoshop" { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 70%
-    }
+h1 a,nav li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-@-webkit-keyframes "illustrator" { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 85%
-    }
+.faux-ui-facia:checked + .slide,.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia + .slide {
+    opacity: 0;
 }
 
-@-webkit-keyframes "wordpress" { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 55%
-    }
+.faux-ui-facia:checked:nth-child(1):checked,.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked {
+    z-index: 9;
 }
 
-@-webkit-keyframes "css" { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 65%
-    }
+.faux-ui-facia:nth-child(1):checked + .slide,.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked + .slide {
+    opacity: 1;
 }
 
-@-webkit-keyframes "html5" { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 55%
-    }
-}
-
-@-webkit-keyframes "jquery" { 
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 20%
-    }
-}
-
-@media (min-width: 500px) and (max-width: 900px) { 
+@media min-width 500px and max-width 900px {
     .project {
-        width: 47%
+        width: 47%;
     }
 
     .relatedProjects div {
-        width: 48%
-    }
+        width: 48%;
+    };
 }
 
-@media screen and (max-width: 500px) { 
+@media screen and max-width 500px {
     #filters li {
-        font-size: .75em
+        font-size: .75em;
     }
 
     .project {
-        width: 98%
+        width: 98%;
     }
 
     .projectPage>img {
@@ -753,125 +660,98 @@ nav li {
     }
 
     .relatedProjects div {
-        float: none;
+        float: left;
         margin: auto auto 1em;
         width: 98%;
     }
 
     .relatedProjects div:nth-child(2n+0) {
-        display: none
-    }
+        display: none;
+    };
 }
 
-
-@media (max-width: 1231px) { 
+@media max-width 1231px {
     .row {
-      margin: 1%;
-      width:30%;
+        margin: 1%;
+        width: 30%;
     }
+
     #portfoliolist .portfolio {
-      margin: 1%;
-      width: 31.333333%;
+        margin: 1%;
+        width: 31.333333%;
     }
+
     header h1 {
-      font-size: 10em;
-      margin-top: 94px;
-    }
-
+        font-size: 10em;
+        margin-top: 94px;
+    };
 }
 
-@media (max-width: 1000px) { 
+@media max-width 1000px {
     .row {
-      width:46%;
-    }
-
+        width: 46%;
+    };
 }
 
-@media (max-width: 786px) { 
+@media max-width 1055px {
+    header h1 {
+        font-size: 8em;
+        margin-top: 115px;
+    };
+}
+
+@media max-width 786px {
     .container {
-        width: 95%
+        width: 95%;
     }
 
     #portfoliolist .portfolio {
-      margin: 1%;
-      width: 48%;
+        margin: 1%;
+        width: 48%;
     }
+
     .row {
-      width:92%;
+        width: 92%;
     }
-    nav{
-      width:100%;
+
+    nav {
+        width: 100%;
     }
-    nav li{
-      float: none;
-      display: block;
+
+    nav li {
+        display: block;
+        float: none;
     }
-    nav li:first-child{
-      display:block;
-      position: absolute;
-      top:.25em;
-      right:.5em;
+
+    nav li:first-child {
+        display: block;
+        position: absolute;
+        right: .5em;
+        top: .25em;
     }
-    ul{
-      height:0;
-      transition:height 1s;
-      overflow: hidden;
-      }
+
+    ul {
+        height: 0;
+        overflow: hidden;
+        transition: height 1s;
+    }
+
     header h1 {
-      font-size: 7em;
-      margin-top: 113px;
-    }
+        font-size: 7em;
+        margin-top: 113px;
+    };
 }
 
-@media (max-width: 1055px) {
+@media max-width 555px {
     header h1 {
-      font-size: 8em;
-      margin-top: 115px;
-    }
-
+        font-size: 6em;
+        margin-top: 125px;
+    };
 }
 
-@media (max-width: 555px) {
+@media max-width 415px {
     header h1 {
-      font-size: 6em;
-      margin-top: 125px;
-    }
-
+        font-size: 5em;
+        margin-top: 135px;
+    };
 }
-
-@media (max-width: 415px) {
-    header h1 {
-      font-size: 5em;
-      margin-top: 135px;
-    }
-
-}
-.slideDown{
-  height:8em;
-  background: rgba(20,20,20,.8);
-  padding: 2em;
-  width: 100%;
-    margin-top: 0;
-}
-
-
-
-___________________________________________
-/*
-.slider {
-  margin: 10px 0;
-  width: 90%; 
-  height: 30em; 
-  position: relative;
-  overflow: hidden;
-}
-
-.slider li {
-    display: none;
-}
-
-
-*/
-
-
-
