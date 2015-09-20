@@ -41,7 +41,7 @@ header {
         color: #fff;
         float: left;
         font-size: 12em;
-        margin-top: 85px;
+        margin-top: 73px;
         letter-spacing: -.08em;
         display: inline-block;
     }
@@ -95,10 +95,21 @@ nav li {
     transition: all 1s ease;    
 }
 
-    #container header {
-        height: 6em
+/*    #container header {
+        height: 4vw;
+        background: #ddd;
     }
 
+    #container header h1 {
+        margin-top: -2.19vw;
+        padding: 0;
+        font-size: 9vw;
+    }
+
+    #container header h1 a {
+        margin: 0;
+    }
+*/
 #filters {
     display: table;
     list-style: none;
@@ -764,7 +775,7 @@ nav li {
     }
     header h1 {
       font-size: 10em;
-      margin-top: 106px;
+      margin-top: 94px;
     }
 
 }
@@ -806,20 +817,16 @@ nav li {
       transition:height 1s;
       overflow: hidden;
       }
+    header h1 {
+      font-size: 7em;
+      margin-top: 113px;
+    }
 }
 
 @media (max-width: 1055px) {
     header h1 {
       font-size: 8em;
-      margin-top: 126px;
-    }
-
-}
-
-@media (max-width: 955px) {
-    header h1 {
-      font-size: 7em;
-      margin-top: 136px;
+      margin-top: 115px;
     }
 
 }
@@ -827,7 +834,7 @@ nav li {
 @media (max-width: 555px) {
     header h1 {
       font-size: 6em;
-      margin-top: 148px;
+      margin-top: 125px;
     }
 
 }
@@ -835,7 +842,7 @@ nav li {
 @media (max-width: 415px) {
     header h1 {
       font-size: 5em;
-      margin-top: 158px;
+      margin-top: 135px;
     }
 
 }
@@ -844,11 +851,27 @@ nav li {
   background: rgba(20,20,20,.8);
   padding: 2em;
   width: 100%;
+    margin-top: 0;
 }
 
 
 
 ___________________________________________
+/*
+.slider {
+  margin: 10px 0;
+  width: 90%; 
+  height: 30em; 
+  position: relative;
+  overflow: hidden;
+}
+
+.slider li {
+    display: none;
+}
+
+
+*/
 
 
 
