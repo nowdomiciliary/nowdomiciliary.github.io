@@ -9,6 +9,23 @@ $(document).ready(function() {
 
 	});
 
+	function submitmyform(){
+    data=$('#form').serialize();
+        $.ajax({
+        url: "sendEmail.php",
+        type:'POST',
+        data:data,
+        async:false,
+        dataType:'html',
+        success: function(msg){
+
+            $('#response_goes_here').html(msg);
+
+        }
+    });
+
+}
+
 
 	$(function () {
 		
