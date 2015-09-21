@@ -624,21 +624,6 @@ h1 a,nav li a {
     width: 100%;
 }
 
-.carousel {
-    height: 30vw;
-    margin: auto auto 2em;
-    text-align: center;
-}
-
-.carousel input {
-    height: 30vw;
-    margin-top: 28em;
-}
-
-.carousel:hover {
-    opacity: .7;
-}
-
 .slide {
     float: right;
     left: 0;
@@ -672,6 +657,21 @@ h1 a,nav li a {
     z-index: 9;
 }
 
+.carousel {
+    height: 30vw;
+    margin: auto auto 2em;
+    text-align: center;
+}
+
+.carousel:hover {
+    opacity: .7;
+}
+
+.carousel input {
+    height: 30vw;
+    margin-top: 28em;
+}
+
 .carousel-slide:checked {
     z-index: 8;
 }
@@ -690,6 +690,9 @@ h1 a,nav li a {
     opacity: 0;
 }
 
+.carousel-slide:checked:nth-child(1):checked,.carousel-slide:nth-child(1):checked ~ .carousel-slide:checked {
+    z-index: 9;
+}
 
 .carousel-slide:nth-child(1):checked + .slide,.carousel-slide:nth-child(1):checked ~ .carousel-slide:checked + .slide {
     opacity: 1;
