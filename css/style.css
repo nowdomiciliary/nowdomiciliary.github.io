@@ -699,7 +699,7 @@ h1 a,nav li a {
 }
 
 
-@media (max-width: 1231px) {
+@media (min-width: 786px) and (max-width: 1231px) {
     .row {
         margin: 1%;
         width: 30%;
@@ -751,7 +751,7 @@ h1 a,nav li a {
     }
 }
 
-@media (max-width: 786px) {
+@media screen and (max-width: 786px) {
     .container {
         width: 95%;
     }
