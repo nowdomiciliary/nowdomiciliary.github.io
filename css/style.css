@@ -81,6 +81,11 @@ nav li:first-child {
     float: right;
 }
 
+h1 a,nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
 #container {
     margin: auto;
     width: 100%;
@@ -219,17 +224,6 @@ nav li:first-child {
 .alignright {
     float: right;
     padding: 0 0 10px 10px;
-}
-
-.carousel {
-    height: 30vw;
-    margin: auto auto 2em;
-    text-align: center;
-}
-
-.carousel input {
-    height: 30vw;
-    margin-top: 28em;
 }
 
 .clear {
@@ -630,6 +624,17 @@ nav li:first-child {
     width: 100%;
 }
 
+.carousel {
+    height: 30vw;
+    margin: auto auto 2em;
+    text-align: center;
+}
+
+.carousel input {
+    height: 30vw;
+    margin-top: 28em;
+}
+
 .carousel:hover {
     opacity: .7;
 }
@@ -681,18 +686,10 @@ nav li:first-child {
     z-index: 8;
 }
 
-h1 a,nav li a {
-    color: #fff;
-    text-decoration: none;
-}
-
 .carousel-slide:checked + .slide,.carousel-slide:nth-child(1):checked ~ .carousel-slide + .slide {
     opacity: 0;
 }
 
-.carousel-slide:checked:nth-child(1):checked,.carousel-slide:nth-child(1):checked ~ .carousel-slide:checked {
-    z-index: 9;
-}
 
 .carousel-slide:nth-child(1):checked + .slide,.carousel-slide:nth-child(1):checked ~ .carousel-slide:checked + .slide {
     opacity: 1;
